@@ -11,6 +11,34 @@
 
 Welcome to your Remotion project!
 
+## Vídeo: Ventajas de Remotion
+
+Vídeo cuadrado (1080×1080) de 25 s sobre las ventajas de Remotion, en
+`src/VentajasRemotion/`. Cada escena vive en su propio archivo y se encadenan
+con `<TransitionSeries>` en `VentajasRemotion.tsx`.
+
+| Composición            | Duración   | Contenido                          |
+| ---------------------- | ---------- | ---------------------------------- |
+| `VentajasDeRemotion`   | 750 frames | El vídeo completo                  |
+| `Intro`                | 140        | Portada                            |
+| `Ventaja01React`       | 140        | Todo el vídeo es código React      |
+| `Ventaja02Parametrico` | 140        | Un vídeo, mil versiones            |
+| `Ventaja03Ecosistema`  | 140        | Todo el ecosistema web             |
+| `Ventaja04Studio`      | 140        | Preview al instante y render       |
+| `Cierre`               | 125        | Cierre y enlace                    |
+
+Las escenas también están registradas por separado (carpeta «Escenas» del
+Studio) para poder editarlas de una en una.
+
+Renderizar solo este vídeo:
+
+```console
+npx remotion render VentajasDeRemotion out/ventajas-remotion.mp4
+```
+
+Las tipografías (Inter y JetBrains Mono) están en `public/fonts/` y se cargan
+con `@remotion/fonts`, así que el render no necesita conexión a internet.
+
 ## Commands
 
 **Install Dependencies**
