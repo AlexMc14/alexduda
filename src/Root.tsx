@@ -1,6 +1,7 @@
 import "./index.css";
 import { Composition, Folder } from "remotion";
 import { MyComposition } from "./Composition";
+import { PersonajeLottie } from "./PersonajeLottie/PersonajeLottie";
 import { Cierre } from "./VentajasRemotion/Cierre";
 import { Escena01React } from "./VentajasRemotion/Escena01React";
 import { Escena02Parametrico } from "./VentajasRemotion/Escena02Parametrico";
@@ -16,6 +17,14 @@ export const RemotionRoot: React.FC = () => {
         id="VentajasDeRemotion"
         component={VentajasRemotion}
         durationInFrames={750}
+        fps={30}
+        width={1080}
+        height={1080}
+      />
+      <Composition
+        id="PersonajeLottie"
+        component={PersonajeLottie}
+        durationInFrames={150}
         fps={30}
         width={1080}
         height={1080}
